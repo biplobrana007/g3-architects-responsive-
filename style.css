@@ -167,6 +167,7 @@ header {
     font-size: 1rem;
     line-height: 26px;
     margin-bottom: 30px;
+    word-wrap: break-word;
 }
 
 .features-left{
