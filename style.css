@@ -96,6 +96,9 @@ header {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5rem;
+    word-wrap: break-word;
+    width: 56%;
+    margin: auto;
 }
 
 .banner-img{
@@ -120,7 +123,8 @@ header {
 #quick-list{
     font-weight:400;
 }
-#feature{
+
+#orange-feature{
     color: #FF900E;
 }
 
@@ -129,6 +133,8 @@ header {
     font-weight: 400;
     margin: 24px 0;
     line-height: 1.5rem;
+    word-wrap: break-word;
+    width: 63%;
 }
 
 .team-work-left{
@@ -141,13 +147,81 @@ header {
 .team-work-img{
     width: 100%;
 }
+
+/* feature section starts */
+
+.features-container{
+    display: flex;
+    gap: 146px;
+}
+
+.features-tile{
+    font-size: 2.81rem;
+    font-weight: 700;
+    padding-left: 21px;
+    border-left: 5px solid #FF900E;
+    margin: 30px 0;
+}
+
+.features-subtitle{
+    font-size: 1rem;
+    line-height: 26px;
+    margin-bottom: 30px;
+}
+
+.features-left{
+    word-wrap: break-word;
+    width: 55%;
+}
+
+.feature{
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+.feature-name{
+    font-size: 1.25rem;
+    font-weight:600;
+}
+
+.feature-desc{
+    font-size: 1rem;
+    line-height: 26px;
+}
+
+.features-right img{
+    width: 100%;
+
+}
+
+.features-right button{
+    margin: 0;
+    margin-top: -90px;
+    margin-left: -100px;
+}
+
+.ten-year{
+    font-size: 4rem;
+
+}
+
+.experience{
+    display: block;
+    font-size: 1.7rem;
+
+}
+
+
+
 /* responsive */
 
 @media screen and (max-width: 576px) {
 
     .nav-bar,
     .nav-links,
-    .team-work-container
+    .team-work-container,
+    .features-container
     {
         flex-direction: column;
 
@@ -161,11 +235,25 @@ header {
         gap: 20px;
         margin-top: 20px;
     }
+
+    .features-left{
+        width: 100%;
+    }
+
+    .features-container{
+        gap: 20px;
+    }
+
+    .features-right button{
+        margin: 0;
+        margin-top: 20px;
+    }
 }
 
 @media screen and ((min-width: 576px) and (max-width: 992px)) {
     .nav-bar,
-    .team-work-container
+    .team-work-container,
+    .features-container
     {
         flex-direction: column;
 
@@ -175,4 +263,18 @@ header {
         gap: 20px;
         margin-top: 20px;
     }
+
+    .features-container{
+        gap: 20px;
+    }
+
+    .features-left{
+        width: 100%;
+    }
+    .features-right button{
+        margin: 0;
+        margin-top: 20px;
+    }
+
+
 }
